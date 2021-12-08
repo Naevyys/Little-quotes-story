@@ -88,4 +88,5 @@ You are done! When you navigate to the `gh-pages` branch, you will see all chang
 * `git diff` - Shows the details of changes in all your non-committed files. You may have to hit `enter` to see the next lines. Examining differences in files is usually much easier using an IDE, but it can be useful when you have nothing else directly at hand.
 * `git branch -l` - Displays the list of local branches. Note that these are not the branches on github, these are you local ones! You may have local branches which don't exist remotely (i.e. on github) anymore or don't exist there yet if you haven't setup the upstream.
 * `git branch -d your-branch` - Deletes the branch `your-branch` locally.
-* ``
+* `git restore path/to/your/file.extension` - Discards local changes to this file and returns to the version you last pulled from the repository. You can put a path to a directory instead of to a single file to discard the changes made in the entire directory.
+* `git restore --staged path/to/your/file.extension` - Unstages file (i.e. undo `git add path/to/your/file.extension`). Just like before, you can replace the path to a file to a directory to unstage all staged files of the given directory.
