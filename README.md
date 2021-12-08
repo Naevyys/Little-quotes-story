@@ -14,12 +14,14 @@ This section is a little guide to explain how to make modifications on this bran
 2. When you arrive in the repo, you will likely be viewing the `main` branch. Change the branch you are viewing to the branch `gh-pages`.
 3. Click on the branch and enter the name of a new branch (let's call it `new-branch`) in the text field at the top of the branches list. You will see a text appearing below saying "Create branch: new-branch from 'gh-pages'". Click on this text.
 4. Your new branch is created. Now clone the repository with `git clone https://github.com/Naevyys/Little-quotes-story.git` or fetch and pull from it with `git fetch` and `git pull` if you have already cloned from it.
-5. You are not done yet! You still need to checkout to your new branch with `git checkout new-branch`. The terminal should give you the following messages: 
+5. You are not done yet! You still need to checkout to your new branch with `git checkout new-branch`\*. The terminal should give you the following messages: 
 > Switched to a new branch 'new-branch'
 > Branch 'new-branch' set up to track remote branch 'new-branch' from 'origin'.
 6. It says that you have created a new branch called `new-branch` locally and that github set its remote origin to be `origin/new-branch` on github. This means that when you will commit and push, it will send your changes to this branch on github.
 
 Now you are done! If you use an IDE, e.g. VSCode, you will likely see the name of the branch you are currently on appear in one of the corners of the window, if you wish to verify on which branch you are. You may need to click somewhere outside of the terminal for the IDE to refresh before you see the new name appearing.
+
+\* Make sure to always commit all your changes before checking out to another branch.
 
 #### Via the commandline
 
@@ -27,8 +29,8 @@ I recommend this way, because it's less of a hassle, especially if you have alre
 
 1. Open a terminal and clone with `git clone https://github.com/Naevyys/Little-quotes-story.git` the repository if not done yet. If you already cloned it, pull from it with `git pull`.
 2. Checkout to the branch `gh-pages` by running `git checkout gh-pages`. Pull again with `git pull`. You can skip this step if you were already on the branch `gh-pages`.
-3. Create a new branch with the command `git checkout new-branch`, where `new-branch` is the name of your new branch. No message in the terminal means the command was successful. If you use an IDE, you can see the name of the branch you are currently on in some corner of the window.
-4. Run `git checkout new-branch` to switch to your newly created branch. The terminal will give you the following message:
+3. Create a new branch with the command `git branch new-branch`, where `new-branch` is the name of your new branch. No message in the terminal means the command was successful. If you use an IDE, you can see the name of the branch you are currently on in some corner of the window.
+4. Run `git checkout new-branch`\* to switch to your newly created branch. The terminal will give you the following message:
 > Switched to branch 'gh-pages'
 5. Note here that this branch does not have any remote origin yet, meaning that if you go on github now, you will not see your branch appearing yet. This is normal, your branch was only created locally for now. You will setup this remote origin the first time you want to push commits on github. For now, you can work as usual on your branch.
 6. When you want to make your first commit, run `git add your-files` and `git commit -m "your message"` as usual. Then run `git push`. You will get a message like this in your terminal:
@@ -38,6 +40,8 @@ I recommend this way, because it's less of a hassle, especially if you have alre
 >    git push --set-upstream origin new-branch
 7. This message is telling you that your push did not work, because your branch does not have a remote origin (i.e. an upstream branch) yet, but that you can create it with your push using the command `git push --set-upstream origin new-branch`.
 8. This command will setup the remote origin and push your commits. If you now go to github, you will see your new branch appearing in the list of branches. And the next times you will push, `git push` will work without further complications. You are done!
+
+\* Make sure to always commit all your changes before checking out to another branch.
 
 ### Step 2: Creating a pull request (PR)
 
@@ -72,8 +76,15 @@ You have just approved a pull request or randomly happened to see a PR that was 
 1. Navigate to the pull requests tab, click on the pull request.
 2. Scroll down until you see the merge option. Click on merge.
 3. Leave a final message and merge.
-4. Optionally, delete the branch. We can create a new one from the new `gh-pages` version of the branch whenever we need.
+4. Optionally, delete the branch. We can create a new one from the new `gh-pages` version of the branch whenever we need. If you do, please notify all people who were working on this branch that it doesn't exist anymore, such that they can checkout to another branch before continuing their work.
 
 You are done! When you navigate to the `gh-pages` branch, you will see all changes from the other branch were merged into the branch. And if you navigate to https://naevyys.github.io/Little-quotes-story/, you will see the new version of the website deployed!
 
 *Note: Github pages may need a few minutes before it deploys the new changes. Be patient, the changes will appear soon.*
+
+## A few useful github commands
+
+* `git status` - Shows you the list of modified files which are added for committing and modified files that are not added for comitting.
+* `git diff` - Shows the details of changes in all your non-committed files. You may have to hit `enter` to see the next lines. Examining differences in files is usually much easier using an IDE, but it can be useful when you have nothing else directly at hand.
+* `git branch -l` - Displays the list of local branches. Note that these are not the branches on github, these are you local ones! You may have local branches which don't exist remotely (i.e. on github) anymore or don't exist there yet if you haven't setup the upstream.
+* `git branch -d your-branch` - Deletes the branch `your-branch` locally.
