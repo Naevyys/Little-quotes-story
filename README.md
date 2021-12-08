@@ -28,13 +28,13 @@ Now you are done! If you use an IDE, e.g. VSCode, you will likely see the name o
 I recommend this way, because it's less of a hassle, especially if you have already cloned the repository. However, it is equivalent to the method via github presented above, so feel free to do whatever you feel more comfortable with.
 
 1. Open a terminal and clone with `git clone https://github.com/Naevyys/Little-quotes-story.git` the repository if not done yet. If you already cloned it, pull from it with `git pull`.
-2. Checkout to the branch `gh-pages` by running `git checkout gh-pages`. Pull again with `git pull`. You can skip this step if you were already on the branch `gh-pages`.
-3. Create a new branch with the command `git branch new-branch`, where `new-branch` is the name of your new branch. No message in the terminal means the command was successful. If you use an IDE, you can see the name of the branch you are currently on in some corner of the window.
+2. Checkout to the branch `gh-pages` by running `git checkout gh-pages`. Pull again with `git pull`. You can skip this step if you were already on the branch `gh-pages`. If you use an IDE, you can see the name of the branch you are currently on in some corner of the window.
+3. Create a new branch with the command `git branch new-branch`, where `new-branch` is the name of your new branch. No message in the terminal means the command was successful.
 4. Run `git checkout new-branch`\* to switch to your newly created branch. The terminal will give you the following message:
 > Switched to branch 'gh-pages'
 5. Note here that this branch does not have any remote origin yet, meaning that if you go on github now, you will not see your branch appearing yet. This is normal, your branch was only created locally for now. You will setup this remote origin the first time you want to push commits on github. For now, you can work as usual on your branch.
 6. When you want to make your first commit, run `git add your-files` and `git commit -m "your message"` as usual. Then run `git push`. You will get a message like this in your terminal:
-> fatal: The current branch new-branch has no upstream branch.
+> fatal: The current branch new-branch has no upstream branch.  
 > To push the current branch and set the remote as upstream, use
 > 
 >    git push --set-upstream origin new-branch
@@ -64,19 +64,19 @@ You have been spammed by one more email stating that your teammate has requested
 *Note: Informally, you can review any pull request, even if you are not assigned as a reviewer. Formally, as far as I know (but I may be wrong), only an assigned reviewer can approve a PR. This is why I recommend to always assign everyone for now.*
 
 1. Navigate to the repo in the pull requests tab. Click on the pull request you want to review.
-2. When you are assigned as a reviewer, you will see a banner on the top suggesting you to review the code. Click on this button.
-3. You will see the list of files changed with all changes detailed. Each file has a checkbox on the top right that you can check when you have reviewed it.
-4. In case you are unhappy with the changes, don't worry, you can modify things. Just make your changes on the branch for which the pull request was created, commit and push them. The new commits will automatically be added to the pull request, you will see this list of commits under the description of the pull request. Once you are happy with the changes, go check the files again and continue from here.
-5. Leave a comment if you want and make sure to check the `approved` option. (I didn't get to make a simulation myself here, because I needed a second person to assign me as a reviewer to do that, so I don't remember the exact names, but it's straightforward when you have it in front of your eyes.) Send your review.
+2. When you are assigned as a reviewer, you will see a banner on the top suggesting you to review the code. Click on the button `Add your review`.
+3. You will see the list of files changed with all changes detailed. Each file has a checkbox `Viewed` on the top right that you can check when you have reviewed it.
+4. In case you are unhappy with the changes, don't worry, you can modify things. Just make your changes on the branch for which the pull request was created, commit and push them. The new commits will automatically be added to the pull request. You can see this list of commits under the description of the pull request. Once you are happy with the changes, go check the files again and continue from here.
+5. When you have reviewed everything, click on the green button `Review changes`. Leave a comment if you want, and make sure to check the `Approve` option. Click on `Submit review`. You are done!
 
 ### Step 4: Merging a pull request
 
 You have just approved a pull request or randomly happened to see a PR that was approved by someone, so you want to merge it to finally see the changes!
 
 1. Navigate to the pull requests tab, click on the pull request.
-2. Scroll down until you see the merge option. Click on merge.
+2. Scroll down until you see the merge option. Click on `Merge pull request`.
 3. Leave a final message and merge.
-4. Optionally, delete the branch. We can create a new one from the new `gh-pages` version of the branch whenever we need. If you do, please notify all people who were working on this branch that it doesn't exist anymore, such that they can checkout to another branch before continuing their work.
+4. Optionally, delete the branch. We can branch again from the updated `gh-pages` branch whenever we need. If you delete the branch, please notify all people who were working on this branch that it doesn't exist anymore, such that they can checkout to another branch before continuing their work.
 
 You are done! When you navigate to the `gh-pages` branch, you will see all changes from the other branch were merged into the branch. And if you navigate to https://naevyys.github.io/Little-quotes-story/, you will see the new version of the website deployed!
 
