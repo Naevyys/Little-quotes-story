@@ -88,3 +88,4 @@ You are done! When you navigate to the `gh-pages` branch, you will see all chang
 * `git diff` - Shows the details of changes in all your non-committed files. You may have to hit `enter` to see the next lines. Examining differences in files is usually much easier using an IDE, but it can be useful when you have nothing else directly at hand.
 * `git branch -l` - Displays the list of local branches. Note that these are not the branches on github, these are you local ones! You may have local branches which don't exist remotely (i.e. on github) anymore or don't exist there yet if you haven't setup the upstream.
 * `git branch -d your-branch` - Deletes the branch `your-branch` locally.
+* ``
