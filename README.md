@@ -17,7 +17,7 @@ This section is a little guide to explain how to make modifications on this bran
 5. You are not done yet! You still need to checkout to your new branch with `git checkout new-branch`. The terminal should give you the following messages: 
 > Switched to a new branch 'new-branch'
 > Branch 'new-branch' set up to track remote branch 'new-branch' from 'origin'.
-6. This means that you have created a new branch called `new-branch` locally and that github set its remote origin to be `origin/new-branch` on github. This means that when you will commit and push, it will send your changes to this branch on github.
+6. It says that you have created a new branch called `new-branch` locally and that github set its remote origin to be `origin/new-branch` on github. This means that when you will commit and push, it will send your changes to this branch on github.
 
 Now you are done! If you use an IDE, e.g. VSCode, you will likely see the name of the branch you are currently on appear in one of the corners of the window, if you wish to verify on which branch you are. You may need to click somewhere outside of the terminal for the IDE to refresh before you see the new name appearing.
 
@@ -74,6 +74,6 @@ You have just approved a pull request or randomly happened to see a PR that was 
 3. Leave a final message and merge.
 4. Optionally, delete the branch. We can create a new one from the new `gh-pages` version of the branch whenever we need.
 
-You are done! When you navigate to the `gh-pages` branch, you will see all changes from the other branch were merged into the branch. And if you navigate to [https://naevyys.github.io/Little-quotes-story/], you will see the new version of the website deployed!
+You are done! When you navigate to the `gh-pages` branch, you will see all changes from the other branch were merged into the branch. And if you navigate to https://naevyys.github.io/Little-quotes-story/, you will see the new version of the website deployed!
 
 *Note: Github pages may need a few minutes before it deploys the new changes. Be patient, the changes will appear soon.*
