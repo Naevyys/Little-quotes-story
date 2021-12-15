@@ -1,37 +1,42 @@
-## Welcome to GitHub Pages
+---
+title: Little Quotes Story
+layout: default
+---
 
-You can use the [editor on GitHub](https://github.com/Naevyys/Little-quotes-story/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# About our story
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Dummy text to be replaced with nice introduction]  
+You see quotes of people in news articles all the time. But does the political orientation of a newspaper influences its quoting style? We investigated this question through an analysis of data contained in the new dataset Quotebank.
 
-### Markdown
+<!-- Missing image source, but dummy image anyway -->
+{% include banner.html
+  title="Insert banner title here"
+  image_url="assets/images/good-morning-new-york.jpg"
+  description="Insert description here"
+%}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Biases
 
-```markdown
-Syntax highlighted code block
+<!-- Banner works, but when the image resolution is too low, the image doesn't span the full width anymore -->
+<!-- Missing image source -->
+<!-- {% include banner.html
+  title="Insert banner title here"
+  image_url="assets/images/democrat-donkey-vs-republican-elephant-1015211.webp"
+  description="Insert description here"
+%} -->
+[Feel free to modify the text here too]  
+We are delighted to present the results of our analyses! However, it is essential to first learn about the biases of our data. We detail them [here](/biases)!
 
-# Header 1
-## Header 2
-### Header 3
+# Our analysis outcomes
 
-- Bulleted
-- List
+[Insert our analysis here]  
+<!-- Missing image source -->
+![images](assets/images/democrat-donkey-vs-republican-elephant-1015211.webp)
 
-1. Numbered
-2. List
+# References
 
-**Bold** and _Italic_ and `Code` text
+[Sources of data (Quotebank, wikidata etc.)]
 
-[Link](url) and ![Image](src)
-```
+# About us
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Naevyys/Little-quotes-story/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[Some info about the team members? :)]
