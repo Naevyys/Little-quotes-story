@@ -3,17 +3,22 @@
     width: 920px;
 }
 
-#container .my-inner-class img {
+.my-inner-class img {
     max-width: 100%;
 }
 
-.img-container {
+.plot {
+    margin-bottom: 20px;
+}
+
+.banner {
     position: relative;
     width: 100vw;
     left: 50%;
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    margin-bottom: 40px;
 }
 
 .text-overlay {
@@ -22,8 +27,8 @@
     left: 10%;
     right: 10%;
     transform: translate(0%, -50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.6)/* rgba(255, 255, 255, 0.6) */;
+    color: white/* black */;
     padding: 20px 30px;
 
 }
@@ -36,13 +41,31 @@
     margin: 0px;
     padding: 0px 0px 10px 0px;
     font-size: 4vw;
+    text-align: center;
 }
 
 .banner-description {
     padding: 0px;
     margin: 0px;
     font-size: 2.5vw;
+    text-align: center;
 }
+
+.section-banner {
+    margin-top: 40px;
+}
+
+.section-banner-img {
+    opacity: 0.6;
+}
+
+/* .section-title {
+    
+} */
+
+/* .section-description {
+    
+} */
 
 @media only screen and (max-width: 920px) {
 

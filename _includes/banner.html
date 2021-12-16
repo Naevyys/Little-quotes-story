@@ -1,9 +1,16 @@
-<div class="img-container">
-    <img class="fill" src="{{ include.image_url }}"/>
+<!-- {% if include.isHeader %}
+<header>
+{% endif %} -->
+<div class="banner {% if include.isHeader != true %} section-banner {% endif %}">
+    <img class="fill {% if include.isHeader != true %} section-banner-img {% endif %}" src="{{ include.image_url }}"/>
     <div class="text-overlay text-overlay-pos">
-      <h1 class="banner-title">
+      <h1 class="banner-title {% if include.isHeader != true %} section-title {% endif %}">
         {{ include.title }}
       </h1>
-      <p class="banner-description">{{ include.description }}</p>
+      <p class="banner-description {% if include.isHeader != true %} section-description {% endif %}">{{ include.description }}</p>
     </div>
 </div>
+{% if include.isHeader %}
+<hr>
+<!-- </header> -->
+{% endif %}
