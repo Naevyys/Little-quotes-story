@@ -10,8 +10,8 @@ You see quotes of people in news articles all the time. But does the political o
 
 <!-- Missing image source, but dummy image anyway -->
 {% include banner.html
-  title="Insert banner title here"
-  image_url="assets/images/good-morning-new-york.jpg"
+  title="Insert banner title here but it's really really long how does that look?"
+  image_url="assets/images/democrat-donkey-vs-republican-elephant-1015211.webp"
   description="Insert description here"
 %}
 
