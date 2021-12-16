@@ -29,6 +29,8 @@ We are delighted to present the results of our analyses! However, it is essentia
 
 # Our analysis outcomes
 
+{% include plots/test_1.html %}
+
 [Insert our analysis here]  
 <!-- Missing image source -->
 ![images](assets/images/democrat-donkey-vs-republican-elephant-1015211.webp)
