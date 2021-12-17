@@ -31,6 +31,10 @@ We would therefore like to generalize this observation to answer the following q
 
 To answer these questions, we will use Quotebank, a repository of 175 Million quotes collected from a wide variety of English-speaking news outlets.
 
+# Disclaimer
+
+In our study, we use two quote parameters to describe quoting style: length (number of words) and polarity score (the higher, the more positive). Our study uses only keep US news outlets that were in the top 200 news outlets with the most quotes each year, and produce their own content. All website political orientation were taken manually from the website [Media Bias/Fact Check](https://mediabiasfactcheck.com/). Biases and their analyses can be found in [our notebook](https://github.com/epfl-ada/ada-2021-project-i-did-ada-did-i).
+
 <!-- {% include plots/0_1.html %} -->
 
 {% include banner.html
@@ -39,9 +43,7 @@ To answer these questions, we will use Quotebank, a repository of 175 Million qu
   description="Analysis of the evolution of quoting style over the years 2015 to 2020."
 %}
 
-[Intro]
-
-<!-- [Biases in our data. Do we want to use a [dedicated page](/biases) for them?] -->
+We first want to determine the evolution of quoting style of the selected news outlets between 2015 and 2020. The analysis is first performed for all news outlets, before separating them according to their political orientation (left-leaning, right-leaning and neutral).
 
 {% include plots/1.1.html %}
 
@@ -123,7 +125,7 @@ We also see that on average, the top speakers (here) have more positive quotes t
 
 # Conclusion
 
-**Democrat and Republican quotes are simiarly distributed amongst news outlets of different political leaning. Democrats have longer quotes in all of them. News outlets quote the speakers from their own political orientation more positively those from the opposite one. FInally, we've seen that politicised news outlets and politicised speakers both lead to generally more negative quotes. It looks like politics is just more negative overall...**
+**Democrat and Republican quotes are similarly distributed amongst news outlets of different political leaning. Democrats have longer quotes in all of them. News outlets quote the speakers from their own political orientation more positively than those from the opposite one. Finally, we've seen that politicised news outlets and politicised speakers both lead to generally more negative quotes. It looks like politics is just more negative overall...**
 
 {% include banner.html
   title="Quoting style according to news source factual reporting"
@@ -157,20 +159,12 @@ We see that very political websites have a lower factual reporting, and that neu
 
 # Conclusion
 
-**From what we've just seen, it doesn't look like variations in factual reporting and quoting style are really linked, or at least not in a linear way. However, we did confirm that very politicised websites have lower factual reporting than neutral or moderatly politicised one.**
-
-{% include banner.html
-  title="Principal component analysis"
-  image_url="assets/images/merged_word_clouds.jpg"
-  description="It's time to let our data shine by itself!"
-%}
-
-[PCA here]
+**rom what we've just seen, it doesn't look like variations in factual reporting and quoting style are really linked, or at least not in a linear way. However, we did confirm that very politicised websites have lower factual reporting than neutral or moderately politicised one.**
 
 {% include banner.html
   title="Sources"
-  image_url="assets/images/boxing-gloves.jpg"
-  description="Insert description here"
+  image_url="assets/images/merged_word_clouds.jpg"
+  description="Our data and image sources"
 %}
 
-The data used for our analysis originates from the dataset [Quotebank](https://drive.google.com/drive/u/0/folders/1R-GVIdxU3jkQb5zU0uG9044Vynh9nYR1) for the years 2015 to 2020. Information on the speakers was extracted from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). Scores for factual reporting and political leaning of news outlets were taken from [Media Bias Check](https://mediabiasfactcheck.com/). The banner word clouds were generated with our speaker data using [this website](https://classic.wordclouds.com/).
+The data used for our analysis originates from the dataset [Quotebank](https://drive.google.com/drive/u/0/folders/1R-GVIdxU3jkQb5zU0uG9044Vynh9nYR1) for the years 2015 to 2020. Information on the speakers was extracted from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). Scores for factual reporting and political leaning of news outlets were taken from [Media Bias/Fact Check](https://mediabiasfactcheck.com/). The banner word clouds were generated with our speaker data using [this website](https://classic.wordclouds.com/).
