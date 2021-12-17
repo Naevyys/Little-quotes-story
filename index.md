@@ -31,14 +31,11 @@ layout: default
 
 <!-- [Biases in our data. Do we want to use a [dedicated page](/biases) for them?] -->
 
-<!-- Sample plot -->
-<!-- {% include plots/test_1.html %} -->
-
-[Plot Evolution of mean quote length in time]
+{% include plots/1.1.html %}
 
 Here we show the distribution of mean quote length per outlet per year. We see that apart from a few outliers, it stays between 18 and 22 words. The mean quote length for all news outlets increased from 20 to 21 words between 2015 and 2020.
 
-[Plot Evolution of quote mean polarity score]
+{% include plots/1.2.html %}
 
 This shows that news outlets have on average slightly positive quotes (polarity score >0). However this positivity has been following a negative trend between 2015 and 2020.
 
@@ -46,7 +43,7 @@ This shows that news outlets have on average slightly positive quotes (polarity 
 
 Next, we divided the news outlets in three groups based on their political orientation : Left-leaning, Right-leaning and Neutral (no difference is made within a group, meaning no degrees of left or right). **This should allow us to determine if the 2 populations we observed correspond to the political leaning of the news outlet.**
 
-[Plot Evolution of quote mean length for news outlets for different political orientations]
+{% include plots/1.3.html %}
 
 Right-leaning news outlets have a higher mean quote length than left-leaning ones for all years. Between 2016 and 2020, the difference between left and right-leaning news outlets' mean quote length stays constant at about 1.3 word.
 
@@ -54,7 +51,7 @@ Furthermore, they both follow the same evolution as the average mean quote lengt
 
 **This graph seems to support the idea of different quoting style between left-leaning and right-leaning news outlets. Let's do the same with polarity score and see if our theory holds.**
 
-[Plot Evolution of mean polarity score for news outlets of different political orientations]
+{% include plots/1.4.html %}
 
 Left-leaning news outlets's quotes are more positive than right-leaning news outlets across all years. Left-leaning news outlets's positivity increased between 2015 and 2020, while right-leaning news outlets stayed more or less constant. Neutral news outlets changed the most, their quote mean polarity score decreased from 0.15 to 0.11.
 
@@ -77,13 +74,13 @@ Between 2015 and 2020, quotes have on average been getting longer (20.2 to 21.2 
 
 For this analysis we decided to focus only on the most quoted Democrats and Republicans within the previously selected news outlets. Find out more about the selection process in our notebook.
 
-[Plot Barplot of the ratio of speakers quoted in function of the news outlet leaning]
+{% include plots/2_1.html %}
 
 Surprisingly, quotes from Democratic and Republican speakers are very closely distributed between the different news outlets. There is only a bit more of the quotes from Democratic speakers in left-leaning news oulets, and a bit more of the quotes from Republican speakers in right-leaning news oulets (about 1%).
 
 **It seems like there is not much difference in how much websites of different political leaning quote Democratic or Republican speakers. Let's see if instead there is one in the way they quote !**
 
-[Plot Barplot of mean quote length in function of speaker and news outlet political orientation]
+{% include plots/2_2.html %}
 
 This plot shows that speakers affiliated to the Democratic party have on average longer quotes than speakers affiliated to the Republican party (by 1-2 words), in neutral, left, and right-leaning news outlets. 
 
@@ -91,7 +88,7 @@ Furthermore, and in accordance to our previous results, we find that there is a 
 
 **Democrat speakers have longer quotes than Republicans, independent of the leaning of the news outlet. Let's now look at the quote positivity.**
 
-[Plot Barplot of mean polarity score in function of speaker and news outlet political orientiation]
+{% include plots/2_3.html %}
 
 First, left-leaning news outlet quote Democrats more positively than Republicans, and right-leaning news outlets quote Republicans more positively than Democrats. **Therefore we observe the expected pattern where news outlets quote the speakers from their own political orientation more positively those from the opposite one.**
 
@@ -101,7 +98,7 @@ Third, we observed that the polarity score of the most quoted speakers belonging
 
 **Therefore we've found that politically oriented top speakers are quoted more negatively on average than either less quoted political speakers or apolitical speakers. Let's look into this more, are apolitical speakers quoted more positively, or could it be that the top speakers are actually quoted more negatively than less quoted speakers?**
 
-[Plot Barplot of mean polarity score in function of speaker and news outlet political orientation]
+{% include plots/2_4.html %}
 
 Following our discovery that the top political speakers had less positive quotes than the average, we decided to compare quotes from top democrat, republican and apolitical speakers. 
 We observe that top apolitical speakers have almost 3 times the polarity score of top Democratic or Republican speakers.
@@ -126,19 +123,19 @@ We also see that on average, the top speakers (here) have more positive quotes t
 
 Among the websites we are assessing, the factual reporting rating ranges from mixed to high.
 
-[Plot barplot of mean polarity score in function of speaker and news outlet factual reporting]
+{% include plots/3_1.html %}
 
 Mixed and high factual reporting have mean quote length around 21 words, whereas mostly factual new outlets have a mean quote length of 18 words.
 
 *We do not have our hypothesised linked increase of quote length and factual reporting.*
 
-[Plot Barplot of mean polarity score in function of news outlet factual reporting]
+{% include plots/3_2.html %}
 
 Once again we have mixed and high factual reporting quite close together at around 0.069 and news outlets with mostly factual reporting at 0.066.
 
 **Therefore quote positivity does not follow factual reporting in a linear fashion**
 
-[Plot Mean factual reporting with respect to politicisation of news outlet]
+{% include plots/3.3.html %}
 
 Here we've separated our news outlet political leaning value with subvalues of left/right, differentiating between left/left-center and right/right-center. All center and extreme values were merged.
 
