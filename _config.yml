@@ -1,7 +1,7 @@
 theme: jekyll-theme-tactile
 title: Little Quotes Story
 description: >-
-  Enter description here.
+  A data story on the quoting style of US news outlets.
 baseurl: "/"
 url: "https://naevyys.github.io/Little-quotes-story/"
 group: "¿I did ADA did I?"

@@ -1,3 +1,11 @@
+hr {
+    margin: 40px 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
 .my-inner-class {
     margin: 0 auto;
     width: 920px;
@@ -26,7 +34,7 @@
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .text-overlay {
@@ -35,8 +43,8 @@
     left: 10%;
     right: 10%;
     transform: translate(0%, -50%);
-    background-color: rgba(0, 0, 0, 0.6)/* rgba(255, 255, 255, 0.6) */;
-    color: white/* black */;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
     padding: 20px 30px;
 
 }
@@ -59,9 +67,9 @@
     text-align: center;
 }
 
-.section-banner {
+/* .section-banner {
     margin-top: 40px;
-}
+} */
 
 .section-banner-img {
     opacity: 0.6;
