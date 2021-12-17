@@ -14,7 +14,7 @@ layout: default
 <!-- Missing image sources -->
 {% include banner.html
   title=site-title
-  image_url="assets/images/democrat-donkey-vs-republican-elephant-1015211.webp"
+  image_url="assets/images/donkey-elephant.jpg"
   description=site-description
   isHeader=true
 %}
@@ -23,7 +23,7 @@ layout: default
 
 {% include banner.html
   title="Evolution of Quoting Style"
-  image_url="assets/images/biden-trump.webp"
+  image_url="assets/images/apolitics_word_clouds.jpg"
   description="Analysis of the evolution of quoting style over the years 2015 to 2020."
 %}
 
@@ -66,7 +66,7 @@ Between 2015 and 2020, quotes have on average been getting longer (20.2 to 21.2 
 
 {% include banner.html
   title="Quoting style according to political orientation"
-  image_url="assets/images/Democrat-vs-Republican.jpg"
+  image_url="assets/images/republicans_word_clouds.jpg"
   description="Analysis of the quoting style according to the political orientation of news outlets and of the speakers they quote."
 %}
 
@@ -115,7 +115,7 @@ We also see that on average, the top speakers (here) have more positive quotes t
 
 {% include banner.html
   title="Quoting style according to news source factual reporting"
-  image_url="assets/images/donkey-elephant.jpg"
+  image_url="assets/images/democrats_word_clouds.jpg"
   description="Analysis of the quoting style of news outlet depending on their factual reporting score."
 %}
 
@@ -148,12 +148,20 @@ We see that very political websites have a lower factual reporting, and that neu
 **From what we've just seen, it doesn't look like variations in factual reporting and quoting style are really linked, or at least not in a linear way. However, we did confirm that very politicised websites have lower factual reporting than neutral or moderatly politicised one.**
 
 {% include banner.html
+  title="Principal component analysis"
+  image_url="assets/images/merged_word_clouds.jpg"
+  description="It's time to let our data shine by itself!"
+%}
+
+[PCA here]
+
+{% include banner.html
   title="Sources"
   image_url="assets/images/boxing-gloves.jpg"
   description="Insert description here"
 %}
 
-[Sources of data (Quotebank, wikidata, info on news outlets, images etc.)]
+The data used for our analysis originates from the dataset [Quotebank](https://drive.google.com/drive/u/0/folders/1R-GVIdxU3jkQb5zU0uG9044Vynh9nYR1) for the years 2015 to 2020. Information on the speakers was extracted from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). Scores for factual reporting and political leaning of news outlets were taken from [Media Bias Check](https://mediabiasfactcheck.com/). The banner word clouds were generated with our speaker data using [this website](https://classic.wordclouds.com/).
 
 {% include banner.html
   title="About us"
