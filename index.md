@@ -143,7 +143,7 @@ Among the websites we are assessing, the factual reporting rating ranges from mi
 
 Mixed and high factual reporting have mean quote length around 21 words, whereas mostly factual new outlets have a mean quote length of 18 words.
 
-*We do not have our hypothesised linked increase of quote length and factual reporting.*
+**We do not have our hypothesised linked increase of quote length and factual reporting.**
 
 {% include plots/3_2.html %}
 
