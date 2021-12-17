@@ -164,9 +164,25 @@ We see that very political websites have a lower factual reporting, and that neu
 **From what we've just seen, it doesn't look like variations in factual reporting and quoting style are really linked, or at least not in a linear way. However, we did confirm that very politicised websites have lower factual reporting than neutral or moderately politicised one.**
 
 {% include banner.html
-  title="Sources"
+  title="Conclusion and outlook"
   image_url="assets/images/merged_word_clouds.jpg"
-  description="Our data and image sources"
+  description="Our final words"
 %}
+
+# Conclusion
+
+We’ve first been able to determine the general quoting style of all news outlets and its evolution between 2015 and 2020. We then showed that there was a difference in the quoting style of left and right-leaning news outlets, with left-leaning news outlets having shorter and more positive quotes. We’ve also shown that politicised news outlets tend to quote speakers from their political orientation more positively than from the opposite one. Furthermore, politicised news outlets are generally more negative in their quotes.
+
+# Outlook
+
+For analysis, we assesed the quoting style according to political leaning of speakers and news outlets between 2015 and 2020. However we believe that the elections (ie who is in power) will directly impact how major political players are quoted. We hypothesize the party in power will on average be quoted more, and in more negative terms because of the higher impact the party has on people's life.
+
+To confirm this hypothesis, it would be necessary to divide the analysis by presidential mendate periods (2012-2016, 2016-2020, 2020-present day) and assess whether there is an inversion in quote mean polarity score for Democratic and Republican speakers (and maybe length).
+
+****
+
+Another possible analysis would be to look at whether news outlets with a political orientation quote speakers with the same political orientation more positively in the months leading up to an election. This would be to prove that they support a candidate over another. Building on this idea, we could assess try to detect the bias of officially neutral news outlets by looking at the difference in the way they quote political candidates before an election (for example using US governors and senators).
+
+# Sources
 
 The data used for our analysis originates from the dataset [Quotebank](https://drive.google.com/drive/u/0/folders/1R-GVIdxU3jkQb5zU0uG9044Vynh9nYR1) for the years 2015 to 2020. Information on the speakers was extracted from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). Scores for factual reporting and political leaning of news outlets were taken from [Media Bias/Fact Check](https://mediabiasfactcheck.com/). The banner word clouds were generated with our speaker data using [this website](https://classic.wordclouds.com/).
