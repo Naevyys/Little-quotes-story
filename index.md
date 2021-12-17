@@ -159,7 +159,7 @@ We see that very political websites have a lower factual reporting, and that neu
 
 # Conclusion
 
-**rom what we've just seen, it doesn't look like variations in factual reporting and quoting style are really linked, or at least not in a linear way. However, we did confirm that very politicised websites have lower factual reporting than neutral or moderately politicised one.**
+**From what we've just seen, it doesn't look like variations in factual reporting and quoting style are really linked, or at least not in a linear way. However, we did confirm that very politicised websites have lower factual reporting than neutral or moderately politicised one.**
 
 {% include banner.html
   title="Sources"
