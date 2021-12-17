@@ -19,7 +19,19 @@ layout: default
   isHeader=true
 %}
 
-[Introduction text]  
+If you follow US news, you’ve noticed that right-leaning news outlets talk about Donald Trump more positively than left-leaning ones. We were interested in determining if this translated into right-leaning news outlets selecting more positive quotes from Donald Trump.
+
+{% include plots/0_2.html %}
+
+There seems to be a difference, let’s investigate if this applies to all Republicans and Democrats!
+
+We would therefore like to generalize this observation to answer the following questions:
+-	**Is there a difference in the way left and right-leaning news outlets quote people?**
+-	More generally, **what is the quoting style of different groups of news outlets?**
+
+To answer these questions, we will use Quotebank, a repository of 175 Million quotes collected from a wide variety of English-speaking news outlets.
+
+<!-- {% include plots/0_1.html %} -->
 
 {% include banner.html
   title="Evolution of Quoting Style"
@@ -162,12 +174,3 @@ We see that very political websites have a lower factual reporting, and that neu
 %}
 
 The data used for our analysis originates from the dataset [Quotebank](https://drive.google.com/drive/u/0/folders/1R-GVIdxU3jkQb5zU0uG9044Vynh9nYR1) for the years 2015 to 2020. Information on the speakers was extracted from [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). Scores for factual reporting and political leaning of news outlets were taken from [Media Bias Check](https://mediabiasfactcheck.com/). The banner word clouds were generated with our speaker data using [this website](https://classic.wordclouds.com/).
-
-{% include banner.html
-  title="About us"
-  image_url="assets/images/donkey-elephant-simple.webp"
-  description="Insert description here"
-%}
-
-<!-- Imo not needed but I give you the choice :) -->
-[Some info about the team members? On a separate page?]
