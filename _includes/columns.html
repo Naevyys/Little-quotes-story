@@ -1,0 +1,18 @@
+<div class="row"> <!-- Row -->
+    <div> <!-- Column 1 -->
+        <!-- Plot -->
+        {% if include.isPlotly %}
+            {% include {{ include.plot }} %}  <!-- Doesn't work for plotly plots, I have no idea why -->
+        {% else %}
+            <img src="{{ include.plot }}" />
+        {% endif %}
+    </div>
+    <div> <!-- Column 2 -->
+        <!-- Text -->
+        {% if include.textIsImg %}
+            <img src="{{ include.text }}" />
+        {% else %}
+            <p>{{ include.text }}</p>
+        {% endif %}
+    </div>
+</div>
