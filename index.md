@@ -33,9 +33,11 @@ To answer these questions, we will use Quotebank, a repository of 175 Million qu
 
 # Disclaimer
 
-In our study, we use two quote parameters to describe quoting style: length (number of words) and polarity score (the higher, the more positive). Our study uses only keep US news outlets that were in the top 200 news outlets with the most quotes each year, and produce their own content. All website political orientation were taken manually from the website [Media Bias/Fact Check](https://mediabiasfactcheck.com/). Biases and their analyses can be found in [our notebook](https://github.com/epfl-ada/ada-2021-project-i-did-ada-did-i).
+In our study, we use two quote parameters to describe quoting style: length (number of words) and polarity score (the higher, the more positive). The evolution of their distribution are plotted below. Our study uses only keep US news outlets that were in the top 200 news outlets with the most quotes each year, and produce their own content. All website political orientation were taken manually from the website [Media Bias/Fact Check](https://mediabiasfactcheck.com/). Biases and their analyses can be found in [our notebook](https://github.com/epfl-ada/ada-2021-project-i-did-ada-did-i).
 
-<!-- {% include plots/0_1.html %} -->
+{% include plots/E_0.html %}
+
+{% include plots/E_1.html %}
 
 {% include banner.html
   title="Evolution of Quoting Style"
