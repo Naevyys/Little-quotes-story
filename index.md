@@ -3,40 +3,79 @@ title: Little Quotes Story
 layout: default
 ---
 
-# About our story
+{% capture site-title %}
+  {{ page.title | default: site.title }}
+{% endcapture %}
 
-[Dummy text to be replaced with nice introduction]  
-You see quotes of people in news articles all the time. But does the political orientation of a newspaper influences its quoting style? We investigated this question through an analysis of data contained in the new dataset Quotebank.
+{% capture site-description %}
+  {{ page.description | default: site.description }}
+{% endcapture %}
 
-<!-- Missing image source, but dummy image anyway -->
+<!-- Missing image sources -->
 {% include banner.html
-  title="Insert banner title here"
-  image_url="assets/images/good-morning-new-york.jpg"
+  title=site-title
+  image_url="assets/images/democrat-donkey-vs-republican-elephant-1015211.webp"
+  description=site-description
+  isHeader=true
+%}
+
+[Introduction text]  
+
+{% include banner.html
+  title="Biases"
+  image_url="assets/images/biden-trump.webp"
   description="Insert description here"
 %}
 
-# Biases
+[Biases in our data. Do we want to use a [dedicated page](/biases) for them?]
 
-<!-- Banner works, but when the image resolution is too low, the image doesn't span the full width anymore -->
-<!-- Missing image source -->
-<!-- {% include banner.html
-  title="Insert banner title here"
-  image_url="assets/images/democrat-donkey-vs-republican-elephant-1015211.webp"
+{% include banner.html
+  title="Analysis outcomes"
+  image_url="assets/images/boxing-gloves.jpg"
   description="Insert description here"
-%} -->
-[Feel free to modify the text here too]  
-We are delighted to present the results of our analyses! However, it is essential to first learn about the biases of our data. We detail them [here](/biases)!
+%}
 
-# Our analysis outcomes
+[Let's tell a story here!] 
 
-[Insert our analysis here]  
-<!-- Missing image source -->
+<!-- Sample plot -->
+{% include plots/test_1.html %}
+
+Sample columns:  <!-- Plotly plots refuse to render inside columns, so use this element only with isPlotly=false -->
+
+{% include columns.html
+  isPlotly=false
+  textIsImg=true
+  plot="assets/images/democrat-donkey-vs-republican-elephant-1015211.webp"
+  text="assets/images/boxing-gloves.jpg"
+  text_lorem="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tempus, purus non sollicitudin egestas, metus tortor dignissim tortor, id tincidunt leo ex quis elit. Cras vitae ipsum ut elit porta congue. Nam ac erat congue lectus pulvinar eleifend. Aliquam id elementum neque, nec interdum augue. Pellentesque porttitor bibendum ante malesuada commodo. Nullam faucibus nisl vitae erat dictum hendrerit. Aliquam facilisis mattis tempor. Etiam ac ligula suscipit, dictum justo eleifend, tempor ex. Nullam iaculis iaculis enim vel aliquam. Quisque accumsan ex felis, sit amet sollicitudin mauris elementum a."
+%}
+
+[More story] 
+ 
+<!-- Sample image inside text -->
 ![images](assets/images/democrat-donkey-vs-republican-elephant-1015211.webp)
 
-# References
+[Yet more story] 
 
-[Sources of data (Quotebank, wikidata etc.)]
+{% include banner.html
+  title="References"
+  image_url="assets/images/Democrat-vs-Republican.jpg"
+  description="Insert description here"
+%}
 
-# About us
+[Sources of data (Quotebank, wikidata, info on news outlets, images etc.)]
 
-[Some info about the team members? :)]
+{% include banner.html
+  title="About us"
+  image_url="assets/images/donkey-elephant.jpg"
+  description="Insert description here"
+%}
+
+<!-- Imo not needed but I give you the choice :) -->
+[Some info about the team members? On a separate page?]
+
+{% include banner.html
+  title="I don't have sections anymore, just for the picture"
+  image_url="assets/images/donkey-elephant-simple.webp"
+  description="Insert description here"
+%}
